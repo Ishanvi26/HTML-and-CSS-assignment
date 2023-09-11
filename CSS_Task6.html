@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 6 - Ishanvi Kotha</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            background-color: white; 
+        }
+
+        #container {
+            width: 50%;
+            max-width: 400px; 
+            text-align: left; 
+            padding: 20px;
+        }
+
+        #content input[type="text"],
+        #content input[type="password"]{
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+        }
+
+        #content strong {
+            display: block; 
+        }
+
+        #content button {
+            width: 425px; 
+            background-color: rgb(93, 200, 93);
+            text-align: center;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #footer {
+            background-color: lightgrey; 
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px; 
+            display: flex;
+            justify-content: space-between; 
+            width: 406px;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        #footer button {
+            background-color: rgb(241, 4, 4);
+            color: white;
+            border: none;
+            text-shadow: none;
+            width: 80px;
+            height: 30px;
+            text-align: left; 
+            border-radius: 10px;
+        }
+
+        #image-container {
+            text-align: center; 
+        }
+
+        #image-container img {
+            display: block;
+            margin: 0 auto; 
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="image-container">
+            <img src="pfp.png" alt="Profile Picture">
+        </div>
+
+        <div id="content">
+            <form action="backend.php">
+                <strong>Username</strong>
+                <input type="text" placeholder="Enter Username" name="uname">
+
+                <strong>Password</strong>
+                <input type="password" placeholder="Enter Password" name="pass">
+
+                <input type="checkbox" name="rm" id="rm">Remember me
+
+                <button>Login</button>
+
+            </form>
+        </div>
+
+        <div id="footer">
+            <button class="cancel">Cancel</button>
+            <a href="reset.html">Forgot Password?</a> 
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 - Ishanvi Kotha</title>
+</head>
+
+<!-- <body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: 'Times New Roman', Times, serif;">
+-->
+<body>
+    <table border="2" width="100%">
+
+        <caption align="center" style="color: blue; font-weight: bolder; font-size: 25px; font-family: 'Times New Roman', Times, serif; margin-bottom: 20px;">Registration Form</caption>
+
+        <tbody>
+            <!-- First Name row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> First Name </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="text" name="fn" style="width: 99%;">
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Last Name row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Last Name </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="text" name="ln" style="width: 99%;">
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Email row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Email </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="email" name="em" style="width: 99%;">
+                    </form>
+                </td>
+            </tr>
+
+            <!--Password row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Password </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="password" name="ps" style="width: 99%;">
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Re Password Name row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Re-enter Password</td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="password" name="reps" style="width: 99%;">
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Gender row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Gender: </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="radio" name="gen"> Male
+                        <br>
+                        <hr>
+                        <input type="radio" name="gen"> Female
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Age row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Age: </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="number" name="age" style="width: 99%;">
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Phone Number row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Phone Number </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="number" name="phn" style="width: 99%;">
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Address row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Address </td>
+                <td style="width: 50%;">
+                    <form action="backend.php">
+                        <textarea name="address" id="add" cols="100" rows="6"></textarea>
+                    </form>
+                </td>
+            </tr>
+
+            <!-- State row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> State </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="text" name="state" style="width: 99%;">
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Country row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Country </td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <label for="country"></label>
+                        <select name="country" id="co">
+                        <option value="select">Select your country</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </form>
+            </select>
+                </td>
+            </tr>
+
+            <!-- Languages known row  -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; width: 25%;"> Languages known</td>
+                <td style="width: 50%">
+                    <form action="backend.php">
+                        <input type="checkbox" name="lang"> English
+                        <input type="checkbox" name="lang"> Kannada
+                        <input type="checkbox" name="lang"> Hindi
+                        <input type="checkbox" name="lang"> Telugu
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Declaration row  -->
+            <tr>
+                <td style="width: 100%;" colspan="2">
+                    <form action="backend.php">
+                        <input type="checkbox" name="lang" style="text-align: left;">Hereby I declare all the given details are true
+                    </form>
+                </td>
+            </tr>
+
+            <!-- Login row  -->
+
+            <tr>
+                <td style="width: 100%; text-align: right;" colspan="2">
+                    Log in to <a href="https://ethnus.com/">Ethnus</a> website
+                </td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+    <br>
+    <table align="center">
+        <tr>
+            <td >
+                <button>Register</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
